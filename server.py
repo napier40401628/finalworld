@@ -70,9 +70,26 @@ def updateCountryByNamePage(	):
 	return render_template(
 		'country.html',
 		c = c) 
-		
+
+@app.route('/createCountry')
+def createPage(	):
+	return render_template(
+		'createcountry.html',
+		c = c) 
+
+'''@app.route('/newCountryByName')
+def newCountryByNamePage(	):
+	c['name']=request.args.get['name']
+	c['capital'] = request.args.get('capital')
+	c['continent'] = request.args.get('continent')
+	c['population'] = request.args.get('population')
+	c['gdp'] = request.args.get('gdp')
+	return render_template(
+		'country.html',
+		c = c) '''
+	
 @app.route('/delete/<n>')
-def deleteCountry(n):
+def deleteCountry():
         i = 0
         for c in w:
                 if c['name'] == n:
@@ -84,5 +101,6 @@ def deleteCountry(n):
 		page_number = 0,
 		page_size = page_size
 		)
+		
 if __name__ == '__main__':
 	app.run(host='0.0.0.0', port=5628, debug=True)

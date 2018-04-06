@@ -12,7 +12,6 @@ img.big {
     right: 1ex;
     top: 1ex;
 }
-img{width:50px;border: solid thin grey; }
 
 .properties div div{
 	display:inline-block;
@@ -27,6 +26,15 @@ a{
 	text-decoration: none;
 }
 .nav_button{
+    border:solid gray thin;
+    bottom: auto;
+    padding: 1ex;
+    margin: 1ex;
+    border-radius: 0.5ex;
+    text-align: center;
+    display: inline-block;
+    }
+.createbutton{
 	border:solid thin black;
 	padding:lex;
 	width:15ex;
